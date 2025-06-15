@@ -438,6 +438,7 @@ body {
     user-select: none;
     position: relative;
     overflow: hidden;
+    padding: 20px;
 }
 
 .preview-section::before {
@@ -456,6 +457,123 @@ body {
     transition: all 0.3s ease;
     z-index: 1;
     letter-spacing: 2px;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Mobile Preview Adjustments */
+@media screen and (max-width: 768px) {
+    .preview-section {
+        height: 30vh;
+        /* min-height: 200px; */
+        max-height: 30vh;
+        padding: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .neon-preview {
+        font-size: 24px; /* Base size for Regular */
+        max-width: 100%;
+        padding: 10px;
+        text-align: center;
+        word-wrap: break-word;
+        line-height: 1.2;
+        transform-origin: center;
+        transition: all 0.3s ease;
+    }
+
+    /* Size-specific adjustments */
+    .neon-preview[data-size="Regular"] {
+        font-size: 24px;
+        transform: scale(1);
+    }
+
+    .neon-preview[data-size="Medium"] {
+        font-size: 28px;
+        transform: scale(1.1);
+    }
+
+    .neon-preview[data-size="Large"] {
+        font-size: 32px;
+        transform: scale(1.2);
+    }
+
+    /* Text length adjustments */
+    .neon-preview[data-text-length="long"] {
+        transform: scale(0.9);
+    }
+
+    /* Special font adjustments */
+    .neon-preview[data-font*="Neon World Demo"],
+    .neon-preview[data-font*="Neon Spark"],
+    .neon-preview[data-font*="Neon Bines"],
+    .neon-preview[data-font*="Monoton"],
+    .neon-preview[data-font*="Orbitron"] {
+        transform: scale(0.9);
+    }
+
+    /* Adjust for different text lengths */
+    .neon-preview[style*="font-size: 64px"] {
+        font-size: 28px !important;
+    }
+
+    .neon-preview[style*="font-size: 80px"] {
+        font-size: 24px !important;
+    }
+
+    /* Special handling for specific fonts that tend to be larger */
+    .neon-preview[style*="font-family: 'Neon World Demo'"],
+    .neon-preview[style*="font-family: 'Neon Spark'"],
+    .neon-preview[style*="font-family: 'Neon Bines'"],
+    .neon-preview[style*="font-family: 'Monoton'"],
+    .neon-preview[style*="font-family: 'Orbitron'"] {
+        font-size: 24px !important;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .preview-section {
+        padding: 10px;
+        min-height: 180px;
+    }
+
+    .neon-preview {
+        font-size: 28px; /* Even smaller base size for phones */
+        padding: 8px;
+    }
+
+    /* Further size reductions for larger fonts on phones */
+    .neon-preview[style*="font-size: 64px"] {
+        font-size: 24px !important;
+    }
+
+    .neon-preview[style*="font-size: 80px"] {
+        font-size: 20px !important;
+    }
+
+    /* Special handling for specific fonts on phones */
+    .neon-preview[style*="font-family: 'Neon World Demo'"],
+    .neon-preview[style*="font-family: 'Neon Spark'"],
+    .neon-preview[style*="font-family: 'Neon Bines'"],
+    .neon-preview[style*="font-family: 'Monoton'"],
+    .neon-preview[style*="font-family: 'Orbitron'"] {
+        font-size: 20px !important;
+        letter-spacing: 0.5px;
+    }
+
+    /* Adjust for very long text on phones */
+    .neon-preview[data-text-length="long"] {
+        font-size: 18px !important;
+        letter-spacing: 0.3px;
+    }
 }
 
 /* Controls Section */
@@ -522,12 +640,13 @@ body {
 
 /* Font Selection */
 .font-scroll {
-    max-height: 200px;
+    max-height: 220px;
     overflow-y: auto;
     background: #111;
     border-radius: 12px;
     padding: 15px;
     margin-top: 10px;
+    -webkit-overflow-scrolling: touch;
 }
 
 .font-scroll::-webkit-scrollbar {
@@ -546,7 +665,8 @@ body {
 .font-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 6px;
+    padding: 8px;
 }
 
 .font-btn {
@@ -555,15 +675,15 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 8px 2px;
+    padding: 6px;
     background-color: rgba(255, 255, 255, 0.03);
     border: none;
     color: #fff;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 6px;
     transition: all 0.2s ease;
     text-align: center;
-    /* min-height: 70px; */
+    min-height: 32px;
     position: relative;
     overflow: hidden;
 }
@@ -585,8 +705,11 @@ body {
 }
 
 .font-btn .font-name {
-    font-size: 18px;
+    font-size: 11px;
     transition: transform 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .font-btn:hover .font-name {
@@ -670,6 +793,17 @@ body {
 .font-btn[data-font="Pacifico"] .font-name { font-family: 'Pacifico', cursive; }
 .font-btn[data-font="Nickainley"] .font-name { font-family: 'Nickainley', cursive; }
 
+/* Remove the font hiding rules */
+.font-btn:nth-child(n+10),
+.font-btn:nth-child(n+6) {
+    display: flex;
+}
+
+/* Remove the "More Fonts" button */
+.font-grid::after {
+    display: none;
+}
+
 /* Color Grid */
 .color-grid {
     display: grid;
@@ -679,6 +813,8 @@ body {
     padding: 15px;
     background: #111;
     border-radius: 12px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .color-btn {
@@ -690,8 +826,8 @@ body {
     transition: all 0.3s ease;
     position: relative;
     padding: 0;
-    min-width: 25px;
-    min-height: 25px;
+    min-width: 0;
+    min-height: 0;
 }
 
 .color-btn::before {
@@ -819,10 +955,12 @@ body {
     padding: 20px;
     background: #111;
     border-radius: 12px;
+    position: relative;
 }
 
 .effect-control {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .effect-control:last-child {
@@ -836,6 +974,7 @@ body {
     margin-bottom: 10px;
     color: #fff;
     font-size: 16px;
+    padding-right: 45px;
 }
 
 .effect-control .slider-container {
@@ -891,10 +1030,313 @@ body {
 
 .effect-control .slider-value {
     position: absolute;
-    right: -40px;
-    top: -5px;
+    right: 0;
+    top: 0;
     color: #fff;
     font-size: 14px;
     min-width: 35px;
     text-align: right;
+    opacity: 0.8;
+}
+
+/* Refined Mobile Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 8px;
+        gap: 12px;
+        height: auto;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #1a1a1a, #000000);
+    }
+
+    .preview-section {
+        width: 100%;
+        height: 35vh;
+        min-height: 220px;
+        margin-bottom: 0;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+    }
+
+    .controls-section {
+        width: 100%;
+        height: auto;
+        max-height: 62vh;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .controls-section h1 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .control-group {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .control-group label {
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #fff;
+        opacity: 0.9;
+        display: block;
+    }
+
+    #textInput {
+        height: 40px;
+        font-size: 15px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+
+    #textInput:focus {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    }
+
+    .font-scroll {
+        max-height: 220px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .font-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        padding: 8px;
+    }
+
+    .font-btn {
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.2s ease;
+        min-height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .font-btn .font-name {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .color-btn {
+        width: 100%;
+        aspect-ratio: 1;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .color-btn.active {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .size-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .size-btn {
+        padding: 8px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .size-btn h3 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .size-btn p {
+        font-size: 11px;
+        opacity: 0.8;
+    }
+
+    .size-btn.active {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .effect-controls {
+        flex-direction: column;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 12px;
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .effect-control {
+        width: 100%;
+    }
+
+    .effect-control label {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+        padding-right: 40px;
+    }
+
+    .slider-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        padding: 2px;
+    }
+
+    .slider {
+        height: 6px;
+        border-radius: 3px;
+    }
+
+    .slider::-webkit-slider-thumb {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .slider::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .slider-value {
+        font-size: 12px;
+        color: #fff;
+        opacity: 0.8;
+        min-width: 30px;
+    }
+}
+
+/* Additional refinements for very small screens */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 6px;
+        gap: 8px;
+    }
+
+    .preview-section {
+        height: 30vh;
+        min-height: 180px;
+    }
+
+    .controls-section {
+        padding: 10px;
+    }
+
+    .controls-section h1 {
+        font-size: 18px;
+    }
+
+    .control-group {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .font-scroll {
+        max-height: 200px;
+    }
+
+    .font-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .color-btn {
+        width: 28px;
+        height: 28px;
+    }
+
+    .font-btn {
+        padding: 4px;
+        font-size: 11px;
+        min-height: 28px;
+    }
+
+    .font-btn .font-name {
+        font-size: 10px;
+    }
+
+    /* Remove the "More Fonts" button for small screens */
+    .font-grid::after {
+        display: none;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .font-btn,
+    .color-btn,
+    .size-btn {
+        min-height: 36px;
+        min-width: 36px;
+    }
+
+    .font-btn:active,
+    .color-btn:active,
+    .size-btn:active {
+        transform: scale(0.95);
+    }
+
+    .slider {
+        height: 8px;
+    }
+
+    .slider::-webkit-slider-thumb {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+    }
 } 

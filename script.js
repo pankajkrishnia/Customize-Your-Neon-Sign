@@ -129,31 +129,68 @@ document.addEventListener('DOMContentLoaded', () => {
         preview.style.fontFamily = getFontFamily(currentFont);
         preview.style.color = currentColor;
 
-        // Update size
+        // Update size with mobile optimization
         let fontSize;
-        switch(currentSize) {
-            case 'Regular':
-                fontSize = '48px';
-                break;
-            case 'Medium':
-                fontSize = '64px';
-                break;
-            case 'Large':
-                fontSize = '80px';
-                break;
-            default:
-                fontSize = '48px';
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile) {
+            // Mobile-specific size adjustments - Fixed order: Regular < Medium < Large
+            switch(currentSize) {
+                case 'Regular':
+                    fontSize = '24px';  // Smallest size
+                    break;
+                case 'Medium':
+                    fontSize = '28px';  // Medium size
+                    break;
+                case 'Large':
+                    fontSize = '32px';  // Largest size
+                    break;
+                default:
+                    fontSize = '24px';
+            }
+        } else {
+            // Desktop sizes remain the same
+            switch(currentSize) {
+                case 'Regular':
+                    fontSize = '48px';
+                    break;
+                case 'Medium':
+                    fontSize = '64px';
+                    break;
+                case 'Large':
+                    fontSize = '80px';
+                    break;
+                default:
+                    fontSize = '48px';
+            }
         }
 
-        // Apply size with length adjustment
+        // Adjust size based on text length
         if (text.length > 15) {
-            fontSize = parseInt(fontSize) * 0.8 + 'px';
+            const baseSize = parseInt(fontSize);
+            fontSize = (baseSize * 0.8) + 'px';
+            preview.setAttribute('data-text-length', 'long');
+        } else {
+            preview.removeAttribute('data-text-length');
         }
+
+        // Special handling for fonts that need smaller sizes
+        const largeFonts = ['Neon World Demo', 'Neon Spark', 'Neon Bines', 'Monoton', 'Orbitron'];
+        if (largeFonts.includes(currentFont)) {
+            const baseSize = parseInt(fontSize);
+            fontSize = (baseSize * 0.8) + 'px';
+        }
+
         preview.style.fontSize = fontSize;
 
         // Update neon effect
         updateNeonEffect();
     }
+
+    // Add resize handler to update preview when screen size changes
+    window.addEventListener('resize', () => {
+        updatePreview();
+    });
 
     function getFontFamily(font) {
         const fontMap = {
