@@ -1,0 +1,900 @@
+@font-face {
+    font-family: 'Neonderthaw';
+    src: url('fonts/Neonderthaw/Neonderthaw-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neon World Demo';
+    src: url('fonts/neon-world-demo/NEON WORLD DEMO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neon Spark';
+    src: url('fonts/neon-spark/Neon Spark.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neon Bines';
+    src: url('fonts/neon-bines/NeonBines.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Passionate';
+    src: url('fonts/passionate/Passionate.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Carry You';
+    src: url('fonts/carry-you/Carry-You.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yellowtail';
+    src: url('fonts/Yellowtail/Yellowtail-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zen Tokyo Zoo';
+    src: url('fonts/Zen_Tokyo_Zoo/ZenTokyoZoo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Warnes';
+    src: url('fonts/Warnes/Warnes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tilt Prism';
+    src: url('fonts/Tilt_Prism/TiltPrism-Regular-VariableFont_XROT,YROT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tilt Neon';
+    src: url('fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT,YROT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rouge Script';
+    src: url('fonts/Rouge_Script/RougeScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nixie One';
+    src: url('fonts/Nixie_One/NixieOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monoton';
+    src: url('fonts/Monoton/Monoton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Michroma';
+    src: url('fonts/Michroma/Michroma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Meow Script';
+    src: url('fonts/Meow_Script/MeowScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Megrim';
+    src: url('fonts/Megrim/Megrim-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Macondo';
+    src: url('fonts/Macondo/Macondo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Script';
+    src: url('fonts/League_Script/LeagueScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lavishly Yours';
+    src: url('fonts/Lavishly_Yours/LavishlyYours-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kranky';
+    src: url('fonts/Kranky/Kranky-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iceberg';
+    src: url('fonts/Iceberg/Iceberg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iceland';
+    src: url('fonts/Iceland/Iceland-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('fonts/Great_Vibes/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grand Hotel';
+    src: url('fonts/Grand_Hotel/GrandHotel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cookie';
+    src: url('fonts/Cookie/Cookie-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codystar';
+    src: url('fonts/Codystar/Codystar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bungee Outline';
+    src: url('fonts/Bungee_Outline/BungeeOutline-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bungee Hairline';
+    src: url('fonts/Bungee_Hairline/BungeeHairline-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Audiowide';
+    src: url('fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allura';
+    src: url('fonts/Allura/Allura-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('fonts/Alex_Brush/AlexBrush-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Miltonian';
+    src: url('fonts/Miltonian/Miltonian-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sunshiney';
+    src: url('fonts/Sunshiney/Sunshiney-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('fonts/Indie_Flower/IndieFlower-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url('fonts/Tourney/Tourney-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oooh Baby';
+    src: url('fonts/Oooh_Baby/OoohBaby-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Condiment';
+    src: url('fonts/Condiment/Condiment-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almendra Display';
+    src: url('fonts/Almendra_Display/AlmendraDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ballet';
+    src: url('fonts/Ballet/Ballet-Regular-VariableFont_opsz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quintessential';
+    src: url('fonts/Quintessential/Quintessential-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nosifer';
+    src: url('fonts/Nosifer/Nosifer-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ms Madi';
+    src: url('fonts/Ms_Madi/MsMadi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Twinkle Star';
+    src: url('fonts/Twinkle_Star/TwinkleStar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Butterfly Kids';
+    src: url('fonts/Butterfly_Kids/ButterflyKids-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ole';
+    src: url('fonts/Ole/Ole-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anaheim';
+    src: url('fonts/Anaheim/Anaheim-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poiret One';
+    src: url('fonts/Poiret_One/PoiretOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stalemate';
+    src: url('fonts/Stalemate/Stalemate-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('fonts/Sacramento/Sacramento-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lovers Quarrel';
+    src: url('fonts/Lovers_Quarrel/LoversQuarrel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kings';
+    src: url('fonts/Kings/Kings-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nickainley';
+    src: url('fonts/nickainley-font/NickainleyNormal-x5Br.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    background: #000;
+    border-radius: 20px;
+    padding: 30px;
+    height: 90vh;
+    max-height: 800px;
+}
+
+/* Preview Section */
+.preview-section {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    border-radius: 15px;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.preview-section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, #000 70%);
+    pointer-events: none;
+}
+
+.neon-preview {
+    font-size: 48px;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    z-index: 1;
+    letter-spacing: 2px;
+}
+
+/* Controls Section */
+.controls-section {
+    flex: 0.8;
+    max-width: 450px;
+    overflow-y: auto;
+    padding: 0 15px;
+}
+
+.controls-section::-webkit-scrollbar {
+    width: 5px;
+}
+
+.controls-section::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.controls-section::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+.controls-section h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.control-group {
+    margin-bottom: 35px;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Text Input */
+#textInput {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #111;
+    border: none;
+    color: #fff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-family: 'Neonderthaw', cursive;
+    line-height: 1.5;
+    min-height: 60px;
+}
+
+#textInput:focus {
+    outline: none;
+    background-color: #1a1a1a;
+}
+
+/* Font Selection */
+.font-scroll {
+    max-height: 200px;
+    overflow-y: auto;
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.font-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.font-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.font-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.font-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.font-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 2px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-align: center;
+    /* min-height: 70px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.font-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.03));
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.font-btn:hover::before {
+    opacity: 1;
+}
+
+.font-btn .font-name {
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.font-btn:hover .font-name {
+    transform: scale(1.05);
+}
+
+.font-btn.active {
+    background-color: #8000ff;
+}
+
+.font-btn.active::before {
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1));
+    opacity: 1;
+}
+
+/* Font-specific styles */
+.font-btn[data-font="Neonderthaw"] .font-name { font-family: 'Neonderthaw', cursive; }
+.font-btn[data-font="Neon World Demo"] .font-name { 
+    font-family: 'Neon World Demo', cursive;
+    font-size: 10px;  /* Smaller font size for Neon World Demo */
+}
+.font-btn[data-font="Neon Spark"] .font-name { 
+    font-family: 'Neon Spark', cursive;
+    font-size: 10px;  /* Smaller font size for Neon Spark */
+}
+.font-btn[data-font="Neon Bines"] .font-name { 
+    font-family: 'Neon Bines', cursive;
+    font-size: 10px;  /* Smaller font size for Neon Bines */
+}
+.font-btn[data-font="Passionate"] .font-name { font-family: 'Passionate', cursive; }
+.font-btn[data-font="Carry You"] .font-name { font-family: 'Carry You', cursive; }
+.font-btn[data-font="Yellowtail"] .font-name { font-family: 'Yellowtail', cursive; }
+.font-btn[data-font="Zen Tokyo Zoo"] .font-name { font-family: 'Zen Tokyo Zoo', cursive; }
+.font-btn[data-font="Warnes"] .font-name { font-family: 'Warnes', cursive; }
+.font-btn[data-font="Tilt Prism"] .font-name { font-family: 'Tilt Prism', cursive; }
+.font-btn[data-font="Tilt Neon"] .font-name { font-family: 'Tilt Neon', cursive; }
+.font-btn[data-font="Rouge Script"] .font-name { font-family: 'Rouge Script', cursive; }
+.font-btn[data-font="Shadows Into Light"] .font-name { font-family: 'Shadows Into Light', cursive; }
+.font-btn[data-font="Orbitron"] .font-name { font-family: 'Orbitron', cursive; }
+.font-btn[data-font="Nixie One"] .font-name { font-family: 'Nixie One', cursive; }
+.font-btn[data-font="Monoton"] .font-name { font-family: 'Monoton', cursive; }
+.font-btn[data-font="Michroma"] .font-name { font-family: 'Michroma', cursive; }
+.font-btn[data-font="Meow Script"] .font-name { font-family: 'Meow Script', cursive; }
+.font-btn[data-font="Megrim"] .font-name { font-family: 'Megrim', cursive; }
+.font-btn[data-font="Macondo"] .font-name { font-family: 'Macondo', cursive; }
+.font-btn[data-font="Lobster"] .font-name { font-family: 'Lobster', cursive; }
+.font-btn[data-font="League Script"] .font-name { font-family: 'League Script', cursive; }
+.font-btn[data-font="Lavishly Yours"] .font-name { font-family: 'Lavishly Yours', cursive; }
+.font-btn[data-font="Kranky"] .font-name { font-family: 'Kranky', cursive; }
+.font-btn[data-font="Iceberg"] .font-name { font-family: 'Iceberg', cursive; }
+.font-btn[data-font="Iceland"] .font-name { font-family: 'Iceland', cursive; }
+.font-btn[data-font="Great Vibes"] .font-name { font-family: 'Great Vibes', cursive; }
+.font-btn[data-font="Grand Hotel"] .font-name { font-family: 'Grand Hotel', cursive; }
+.font-btn[data-font="Cookie"] .font-name { font-family: 'Cookie', cursive; }
+.font-btn[data-font="Codystar"] .font-name { font-family: 'Codystar', cursive; }
+.font-btn[data-font="Bungee Outline"] .font-name { font-family: 'Bungee Outline', cursive; }
+.font-btn[data-font="Bungee Hairline"] .font-name { font-family: 'Bungee Hairline', cursive; }
+.font-btn[data-font="Audiowide"] .font-name { font-family: 'Audiowide', cursive; }
+.font-btn[data-font="Allura"] .font-name { font-family: 'Allura', cursive; }
+.font-btn[data-font="Alex Brush"] .font-name { font-family: 'Alex Brush', cursive; }
+.font-btn[data-font="Miltonian"] .font-name { font-family: 'Miltonian', cursive; }
+.font-btn[data-font="Sunshiney"] .font-name { font-family: 'Sunshiney', cursive; }
+.font-btn[data-font="Indie Flower"] .font-name { font-family: 'Indie Flower', cursive; }
+.font-btn[data-font="Tourney"] .font-name { font-family: 'Tourney', cursive; }
+.font-btn[data-font="Oooh Baby"] .font-name { font-family: 'Oooh Baby', cursive; }
+.font-btn[data-font="Condiment"] .font-name { font-family: 'Condiment', cursive; }
+.font-btn[data-font="Almendra Display"] .font-name { font-family: 'Almendra Display', cursive; }
+.font-btn[data-font="Ballet"] .font-name { font-family: 'Ballet', cursive; }
+.font-btn[data-font="Quintessential"] .font-name { font-family: 'Quintessential', cursive; }
+.font-btn[data-font="Nosifer"] .font-name { font-family: 'Nosifer', cursive; }
+.font-btn[data-font="Ms Madi"] .font-name { font-family: 'Ms Madi', cursive; }
+.font-btn[data-font="Twinkle Star"] .font-name { font-family: 'Twinkle Star', cursive; }
+.font-btn[data-font="Butterfly Kids"] .font-name { font-family: 'Butterfly Kids', cursive; }
+.font-btn[data-font="Ole"] .font-name { font-family: 'Ole', cursive; }
+.font-btn[data-font="Anaheim"] .font-name { font-family: 'Anaheim', cursive; }
+.font-btn[data-font="Poiret One"] .font-name { font-family: 'Poiret One', cursive; }
+.font-btn[data-font="Stalemate"] .font-name { font-family: 'Stalemate', cursive; }
+.font-btn[data-font="Sacramento"] .font-name { font-family: 'Sacramento', cursive; }
+.font-btn[data-font="Lovers Quarrel"] .font-name { font-family: 'Lovers Quarrel', cursive; }
+.font-btn[data-font="Kings"] .font-name { font-family: 'Kings', cursive; }
+.font-btn[data-font="Pacifico"] .font-name { font-family: 'Pacifico', cursive; }
+.font-btn[data-font="Nickainley"] .font-name { font-family: 'Nickainley', cursive; }
+
+/* Color Grid */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+    padding: 15px;
+    background: #111;
+    border-radius: 12px;
+}
+
+.color-btn {
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.color-btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.color-btn:hover::before {
+    opacity: 1;
+}
+
+.color-btn.active {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px currentColor;
+}
+
+.color-btn.active::before {
+    opacity: 1;
+    background: linear-gradient(45deg, rgba(255,255,255,0.2), transparent);
+}
+
+/* Size Grid */
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.size-btn {
+    padding: 15px 10px;
+    background-color: #111;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.size-btn h3 {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size-btn p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin: 2px 0;
+}
+
+.size-btn:hover {
+    background-color: #1a1a1a;
+}
+
+.size-btn.active {
+    background-color: #8000ff;
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.3);
+}
+
+/* Neon Text Effect */
+.neon-effect {
+    text-shadow: 
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 3px currentColor,
+        0 0 6px currentColor,
+        0 0 10px currentColor;
+    letter-spacing: 1px;
+}
+
+/* Shark Tank Logo */
+.shark-tank {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+}
+
+.shark-tank img {
+    height: 30px;
+    opacity: 0.7;
+}
+
+/* Price Display */
+.price-display {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.price-display .stars {
+    color: #ffd700;
+    margin-bottom: 5px;
+}
+
+.price-display .price {
+    font-size: 24px;
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.price-display .reviews {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 5px;
+}
+
+/* Effect Controls */
+.effect-controls {
+    margin-top: 30px;
+    padding: 20px;
+    background: #111;
+    border-radius: 12px;
+}
+
+.effect-control {
+    margin-bottom: 20px;
+}
+
+.effect-control:last-child {
+    margin-bottom: 0;
+}
+
+.effect-control label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.effect-control .slider-container {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.effect-control .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.effect-control .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #8000ff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.effect-control .slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(128, 0, 255, 0.5);
+}
+
+.effect-control .slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #8000ff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.effect-control .slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(128, 0, 255, 0.5);
+}
+
+.effect-control .slider-value {
+    position: absolute;
+    right: -40px;
+    top: -5px;
+    color: #fff;
+    font-size: 14px;
+    min-width: 35px;
+    text-align: right;
+} 

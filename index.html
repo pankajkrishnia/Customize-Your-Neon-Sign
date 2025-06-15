@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Sign Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left side - Preview Area -->
+        <div class="preview-section">
+            <div id="neonPreview" class="neon-preview"></div>
+        </div>
+
+        <!-- Right side - Controls -->
+        <div class="controls-section">
+            <h1>Customise Neon Sign</h1>
+            
+            <!-- Text Input -->
+            <div class="control-group">
+                <label for="textInput">Type Your Text</label>
+                <input type="text" id="textInput" placeholder="Enter your text here">
+            </div>
+
+            <!-- Font Selection -->
+            <div class="control-group">
+                <label>Pick Your Font</label>
+                <div class="font-scroll">
+                    <div class="font-grid">
+                        <button class="font-btn active" data-font="Neonderthaw">
+                            <span class="font-name">Neonderthaw</span>
+                        </button>
+                        <button class="font-btn" data-font="Neon World Demo">
+                            <span class="font-name">Neon World Demo</span>
+                        </button>
+                        <button class="font-btn" data-font="Neon Spark">
+                            <span class="font-name">Neon Spark</span>
+                        </button>
+                        <button class="font-btn" data-font="Neon Bines">
+                            <span class="font-name">Neon Bines</span>
+                        </button>
+                        <button class="font-btn" data-font="Passionate">
+                            <span class="font-name">Passionate</span>
+                        </button>
+                        <button class="font-btn" data-font="Carry You">
+                            <span class="font-name">Carry You</span>
+                        </button>
+                        <button class="font-btn" data-font="Zen Tokyo Zoo">
+                            <span class="font-name">Zen Tokyo Zoo</span>
+                        </button>
+                        <button class="font-btn" data-font="Warnes">
+                            <span class="font-name">Warnes</span>
+                        </button>
+                        <button class="font-btn" data-font="Tilt Prism">
+                            <span class="font-name">Tilt Prism</span>
+                        </button>
+                        <button class="font-btn" data-font="Tilt Neon">
+                            <span class="font-name">Tilt Neon</span>
+                        </button>
+                        <button class="font-btn" data-font="Rouge Script">
+                            <span class="font-name">Rouge Script</span>
+                        </button>
+                        <button class="font-btn" data-font="Shadows Into Light">
+                            <span class="font-name">Shadows Into Light</span>
+                        </button>
+                        <button class="font-btn" data-font="Orbitron">
+                            <span class="font-name">Orbitron</span>
+                        </button>
+                        <button class="font-btn" data-font="Nixie One">
+                            <span class="font-name">Nixie One</span>
+                        </button>
+                        <button class="font-btn" data-font="Monoton">
+                            <span class="font-name">Monoton</span>
+                        </button>
+                        <button class="font-btn" data-font="Michroma">
+                            <span class="font-name">Michroma</span>
+                        </button>
+                        <button class="font-btn" data-font="Meow Script">
+                            <span class="font-name">Meow Script</span>
+                        </button>
+                        <button class="font-btn" data-font="Megrim">
+                            <span class="font-name">Megrim</span>
+                        </button>
+                        <button class="font-btn" data-font="Macondo">
+                            <span class="font-name">Macondo</span>
+                        </button>
+                        <button class="font-btn" data-font="Lobster">
+                            <span class="font-name">Lobster</span>
+                        </button>
+                        <button class="font-btn" data-font="League Script">
+                            <span class="font-name">League Script</span>
+                        </button>
+                        <button class="font-btn" data-font="Lavishly Yours">
+                            <span class="font-name">Lavishly Yours</span>
+                        </button>
+                        <button class="font-btn" data-font="Kranky">
+                            <span class="font-name">Kranky</span>
+                        </button>
+                        <button class="font-btn" data-font="Iceberg">
+                            <span class="font-name">Iceberg</span>
+                        </button>
+                        <button class="font-btn" data-font="Iceland">
+                            <span class="font-name">Iceland</span>
+                        </button>
+                        <button class="font-btn" data-font="Great Vibes">
+                            <span class="font-name">Great Vibes</span>
+                        </button>
+                        <button class="font-btn" data-font="Grand Hotel">
+                            <span class="font-name">Grand Hotel</span>
+                        </button>
+                        <button class="font-btn" data-font="Cookie">
+                            <span class="font-name">Cookie</span>
+                        </button>
+                        <button class="font-btn" data-font="Codystar">
+                            <span class="font-name">Codystar</span>
+                        </button>
+                        <button class="font-btn" data-font="Bungee Outline">
+                            <span class="font-name">Bungee Outline</span>
+                        </button>
+                        <button class="font-btn" data-font="Bungee Hairline">
+                            <span class="font-name">Bungee Hairline</span>
+                        </button>
+                        <button class="font-btn" data-font="Audiowide">
+                            <span class="font-name">Audiowide</span>
+                        </button>
+                        <button class="font-btn" data-font="Allura">
+                            <span class="font-name">Allura</span>
+                        </button>
+                        <button class="font-btn" data-font="Alex Brush">
+                            <span class="font-name">Alex Brush</span>
+                        </button>
+                        <button class="font-btn" data-font="Miltonian">
+                            <span class="font-name">Miltonian</span>
+                        </button>
+                        <button class="font-btn" data-font="Sunshiney">
+                            <span class="font-name">Sunshiney</span>
+                        </button>
+                        <button class="font-btn" data-font="Indie Flower">
+                            <span class="font-name">Indie Flower</span>
+                        </button>
+                        <button class="font-btn" data-font="Tourney">
+                            <span class="font-name">Tourney</span>
+                        </button>
+                        <button class="font-btn" data-font="Oooh Baby">
+                            <span class="font-name">Oooh Baby</span>
+                        </button>
+                        <button class="font-btn" data-font="Condiment">
+                            <span class="font-name">Condiment</span>
+                        </button>
+                        <button class="font-btn" data-font="Almendra Display">
+                            <span class="font-name">Almendra Display</span>
+                        </button>
+                        <button class="font-btn" data-font="Ballet">
+                            <span class="font-name">Ballet</span>
+                        </button>
+                        <button class="font-btn" data-font="Quintessential">
+                            <span class="font-name">Quintessential</span>
+                        </button>
+                        <button class="font-btn" data-font="Nosifer">
+                            <span class="font-name">Nosifer</span>
+                        </button>
+                        <button class="font-btn" data-font="Ms Madi">
+                            <span class="font-name">Ms Madi</span>
+                        </button>
+                        <button class="font-btn" data-font="Twinkle Star">
+                            <span class="font-name">Twinkle Star</span>
+                        </button>
+                        <button class="font-btn" data-font="Butterfly Kids">
+                            <span class="font-name">Butterfly Kids</span>
+                        </button>
+                        <button class="font-btn" data-font="Ole">
+                            <span class="font-name">Ole</span>
+                        </button>
+                        <button class="font-btn" data-font="Anaheim">
+                            <span class="font-name">Anaheim</span>
+                        </button>
+                        <button class="font-btn" data-font="Poiret One">
+                            <span class="font-name">Poiret One</span>
+                        </button>
+                        <button class="font-btn" data-font="Stalemate">
+                            <span class="font-name">Stalemate</span>
+                        </button>
+                        <button class="font-btn" data-font="Sacramento">
+                            <span class="font-name">Sacramento</span>
+                        </button>
+                        <button class="font-btn" data-font="Lovers Quarrel">
+                            <span class="font-name">Lovers Quarrel</span>
+                        </button>
+                        <button class="font-btn" data-font="Kings">
+                            <span class="font-name">Kings</span>
+                        </button>
+                        <button class="font-btn" data-font="Pacifico">
+                            <span class="font-name">Pacifico</span>
+                        </button>
+                        <button class="font-btn" data-font="Nickainley">
+                            <span class="font-name">Nickainley</span>
+                        </button>
+                        <button class="font-btn" data-font="Yellowtail">
+                            <span class="font-name">Yellowtail</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Selection -->
+            <div class="control-group">
+                <label>Select Your Colour</label>
+                <div class="color-grid">
+                    <button class="color-btn" data-color="#ffffff" style="background-color: #ffffff;"></button>
+                    <button class="color-btn" data-color="#ff69b4" style="background-color: #ff69b4;"></button>
+                    <button class="color-btn" data-color="#00ff00" style="background-color: #00ff00;"></button>
+                    <button class="color-btn" data-color="#0000ff" style="background-color: #0000ff;"></button>
+                    <button class="color-btn" data-color="#800080" style="background-color: #800080;"></button>
+                    <button class="color-btn" data-color="#ffa500" style="background-color: #ffa500;"></button>
+                    <button class="color-btn" data-color="#00ffff" style="background-color: #00ffff;"></button>
+                    <button class="color-btn" data-color="#f5f5f5" style="background-color: #f5f5f5;"></button>
+                    <button class="color-btn" data-color="#ff0000" style="background-color: #ff0000;"></button>
+                    <button class="color-btn" data-color="#ffff00" style="background-color: #ffff00;"></button>
+                </div>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="control-group">
+                <label>Select Size</label>
+                <div class="size-grid">
+                    <div class="size-btn active">
+                        <h3>Regular</h3>
+                        <p>Width: 12"</p>
+                        <p>Height: 10"</p>
+                    </div>
+                    <div class="size-btn">
+                        <h3>Medium</h3>
+                        <p>Width: 16"</p>
+                        <p>Height: 13"</p>
+                    </div>
+                    <div class="size-btn">
+                        <h3>Large</h3>
+                        <p>Width: 20"</p>
+                        <p>Height: 15"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Effect Controls -->
+            <div class="effect-controls">
+                <div class="effect-control">
+                    <label>
+                        Glow Intensity
+                        <span class="slider-value">20%</span>
+                    </label>
+                    <div class="slider-container">
+                        <input type="range" class="slider" id="glowSlider" min="0" max="100" value="20">
+                    </div>
+                </div>
+                <div class="effect-control">
+                    <label>
+                        Sharpness
+                        <span class="slider-value">100%</span>
+                    </label>
+                    <div class="slider-container">
+                        <input type="range" class="slider" id="sharpnessSlider" min="0" max="100" value="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
